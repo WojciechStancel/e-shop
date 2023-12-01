@@ -1,10 +1,11 @@
 .bestsellersHeader {
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .productsWrapper {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-around;
+
 }

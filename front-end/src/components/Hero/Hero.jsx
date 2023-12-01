@@ -11,7 +11,7 @@ const Hero = ({ heroImage }) => {
 				<div className={style.contentWrapper}>
 					<h2>Promocja na Black Friday -40%</h2>
 					<p>Najlepsze okazje!</p>
-					<FullWidthBtn>Sprawdź!</FullWidthBtn>
+					<FullWidthBtn>Sprawdź ofertę!</FullWidthBtn>
 				</div>
 			</CenteredContent>
 		</div>
