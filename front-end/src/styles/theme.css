@@ -1,0 +1,12 @@
+body {
+	--font-size-default: 16px;
+	--font-family-default: Helvetica, Arial, sans-serif;
+	--color-text-default: #1c1a1a;
+	--color-text-grey: #9b9a9a;
+	--color-yellow: #f0d315;
+	--color-white: #ffffff;
+	--color-grey: #e7e6e6;
+	--color-theme-main: #052069;
+    --color-footer-main: rgb(0, 5, 65);
+	--color-price: #298197;
+}

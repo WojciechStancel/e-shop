@@ -1,0 +1,9 @@
+.logo {
+    text-transform: none;
+    text-align: center;
+}
+
+.logo span {
+    color: var(--color-theme-main);
+    text-transform: none;
+}
