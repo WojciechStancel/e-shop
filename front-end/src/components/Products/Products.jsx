@@ -1,11 +1,11 @@
-import style from "./BestSellers.module.css";
+import style from "./Products.module.css";
 import CenteredContent from "../CenteredContent/CenteredContent";
 import Product from "../Product/Product";
 
-const BestSellers = ({ products }) => {
+const Products = ({ products, headerText }) => {
 	return (
 		<CenteredContent>
-			<h2 className={style.bestsellersHeader}>Nasze bestsellery</h2>
+			<h2 className={style.bestsellersHeader}>{headerText}</h2>
 			<div className={style.productsWrapper}>
 				{products.map((product) => {
 					return <Product key={product.id} product={product} />;
@@ -14,4 +14,4 @@ const BestSellers = ({ products }) => {
 		</CenteredContent>
 	);
 };
-export default BestSellers;
+export default Products;
