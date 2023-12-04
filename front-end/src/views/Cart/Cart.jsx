@@ -1,7 +1,7 @@
 import CartProductList from "../../components/CartProductList/CartProductList";
 import CartSummary from "../../components/CartSummary/CartSummary";
 import FlexContainer from "../../components/FlexContainer/FlexContainer";
-import Layout from "../../components/Layout/Layout";
+
 
 const Cart = () => {
 	const CartProducts = [
@@ -45,12 +45,12 @@ const Cart = () => {
 		},
 	];
 	return (
-		<Layout>
+
 			<FlexContainer>
 				<CartProductList products={CartProducts} />
 				<CartSummary products={CartProducts} />
 			</FlexContainer>
-		</Layout>
+
 	);
 };
 export default Cart;

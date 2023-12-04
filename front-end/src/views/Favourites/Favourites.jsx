@@ -1,9 +1,8 @@
-import FavouritesList from "../../components/FavouritesList/FavouritesList"
-import Layout from "../../components/Layout/Layout"
+import FavouritesList from "../../components/FavouritesList/FavouritesList";
 
 const Favourites = () => {
-    const favouritesProducts = [
-        {
+	const favouritesProducts = [
+		{
 			id: 1,
 			gender: "men",
 			category: "odziez",
@@ -41,11 +40,7 @@ const Favourites = () => {
 			maintenanceInfo:
 				"Nemo et nam quasi in suscipit earum odit laborum repellat quo dolore rem, sequi eaque sapiente quibu",
 		},
-    ]
-  return (
-    <Layout>
-        <FavouritesList products={favouritesProducts} />
-    </Layout>
-  )
-}
-export default Favourites
+	];
+	return <FavouritesList products={favouritesProducts} />;
+};
+export default Favourites;
