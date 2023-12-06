@@ -5,7 +5,7 @@ const mainPageLoader = ({params}) => {
 
     const backendPath = ENDPOINT_MAPPING[params.gender]
     if (backendPath){
-        return fetch(`${BACK_END_URL}${backendPath}`)
+        return fetch(`${BACK_END_URL}/${backendPath}`)
     } else {
         return redirect('/kobieta')
     }
