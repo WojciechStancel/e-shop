@@ -7,31 +7,41 @@ import Logo from "../Logo/Logo";
 import { MainContent } from "../MainContent/MainContent";
 import MainMenu from "../MainMenu/MainMenu";
 import TopBar from "../TopBar/TopBar";
-import { useState } from "react";
 import { CURRENCIES } from "../../constants/curriencies";
 import { CurrencyContext } from "../../contexts/CurrencyContext";
+import { CartContext } from "../../contexts/CartContext";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 const Layout = () => {
-	const [currency, setCurrency] = useState(
-		localStorage["selected_currency"] || CURRENCIES.PLN
+	const [currency, setCurrency] = useLocalStorage(
+		"selected_currency",
+		CURRENCIES.PLN
 	);
-	return (
-		<CurrencyContext.Provider value={[currency, setCurrency]}>
-			<MainContent>
-				<TopBar>
-					<MainMenu />
-					<Logo />
-					<div>
-						<CurrencySelector />
-						<IconMenu />
-					</div>
-				</TopBar>
-				<CategoryMenu />
-				<Outlet />
-			</MainContent>
+	const [cartItems, setCartItems] = useLocalStorage("cart_products", []);
 
-			<Footer />
-		</CurrencyContext.Provider>
+	function addProductToCart(product) {
+		const newState = [...cartItems, product];
+		setCartItems(newState)
+	}
+	return (
+		<CartContext.Provider value={[cartItems, addProductToCart]}>
+			<CurrencyContext.Provider value={[currency, setCurrency]}>
+				<MainContent>
+					<TopBar>
+						<MainMenu />
+						<Logo />
+						<div>
+							<CurrencySelector />
+							<IconMenu />
+						</div>
+					</TopBar>
+					<CategoryMenu />
+					<Outlet />
+				</MainContent>
+
+				<Footer />
+			</CurrencyContext.Provider>
+		</CartContext.Provider>
 	);
 };
 export default Layout;
