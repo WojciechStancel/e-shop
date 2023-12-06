@@ -1,15 +1,34 @@
 import styles from "./CartSummary.module.css";
 import FullWidthBtn from "../../components/FullWidthBtn/FullWidthBtn";
 import DELIVERY_ICON from "../../assets/delivery.svg";
+import { useContext } from "react";
+import { CurrencyContext } from "../../contexts/CurrencyContext";
+import { CURRENCIES, CURRENCY_SIGN } from "../../constants/curriencies";
 
 const CartSummary = ({ products }) => {
-	const deliveryCost = 20;
-	const minSumForDelivery = 450;
+	const [currency] = useContext(CurrencyContext)
+
+	const deliveryCosts = {
+		[CURRENCIES.USD]: 10,
+		[CURRENCIES.PLN]: 49,
+	}
+
+	const minSumsForDelivery = {
+		[CURRENCIES.USD]: 100,
+		[CURRENCIES.PLN]: 450,
+	}
+
+	const currencySign = CURRENCY_SIGN[currency]
+
+
+
+	const deliveryCost = deliveryCosts[currency];
+	const minSumForDelivery = minSumsForDelivery[currency];
 
 	let sum = 0;
 
     products.forEach((product) => {
-        sum += product.pricePLN;
+        sum += currency === CURRENCIES.PLN ? product.pricePLN : product.priceUSD;
     })
 
     const totalCost = sum > minSumForDelivery ? sum : sum + deliveryCost
@@ -19,20 +38,20 @@ const CartSummary = ({ products }) => {
 			<h2>Podsumowanie</h2>
 			<div className={styles.cartRow}>
 				<p>Wartość produktów</p>
-				<p>{sum}zł</p>
+				<p>{sum}{currencySign}</p>
 			</div>
 			<div className={styles.cartRow}>
 				<p>Koszt dostawy:</p>
-				<p>{sum > minSumForDelivery ? 0 : deliveryCost}</p>
+				<p>{sum > minSumForDelivery ? 0 : deliveryCost}{currencySign}</p>
 			</div>
 			<div className={`${styles.cartRow} ${styles.cartSummaryRow}`}>
 				<p>Do zapłaty:</p>
-				<p>{totalCost}zł</p>
+				<p>{totalCost}{currencySign}</p>
 			</div>
 			<FullWidthBtn>Do kasy</FullWidthBtn>
 			<div className={styles.deliveryInfo}>
 				<img src={DELIVERY_ICON} />
-				<p>Darmowa dostawa od: {minSumForDelivery}zł</p>
+				<p>Darmowa dostawa od: {minSumForDelivery}{currencySign}</p>
 			</div>
 		</div>
 	);
