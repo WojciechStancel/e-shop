@@ -1,14 +1,14 @@
 import style from "./FavouritesList.module.css";
 import CenteredContent from "../CenteredContent/CenteredContent";
 import FavouriteProduct from "../FavouriteProduct/FavouriteProduct";
-const FavouritesList = ({ products }) => {
+const FavouritesList = ({ favourites }) => {
 	return (
 		<CenteredContent>
 			<div className={style.favouritesList}>
 				<h2>Ulubione</h2>
 				<div>
-					{products.map((product) => {
-						return <FavouriteProduct key={product.id} product={product} />;
+					{favourites.map((favourite) => {
+						return <FavouriteProduct key={favourite.id} favourite={favourite} />;
 					})}
 				</div>
 			</div>
