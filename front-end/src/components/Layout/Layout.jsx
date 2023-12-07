@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import CategoryMenu from "../CategoryMenu/CategoryMenu";
 import CurrencySelector from "../CurrencySelector/CurrencySelector";
 import Footer from "../Footer/Footer";
@@ -32,7 +32,7 @@ const Layout = () => {
 						<Logo />
 						<div>
 							<CurrencySelector />
-							<IconMenu />
+							<IconMenu countOfCartItems={cartItems}/>
 						</div>
 					</TopBar>
 					<CategoryMenu />

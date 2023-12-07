@@ -3,19 +3,19 @@ import LIKES_ICON from "../../assets/thumb-up.svg";
 import BASKET_ICON from "../../assets/basket.svg";
 import { Link } from "react-router-dom";
 
-const IconMenu = () => {
-    const cartItems = 2;
+const IconMenu = ({countOfCartItems}) => {
+	const cartItems = countOfCartItems.length;
 	return (
 		<ul className={styles.iconMenu}>
 			<li>
 				<Link to="/ulubione">
-					<img src={LIKES_ICON} alt="" />
+					<img src={LIKES_ICON} />
 				</Link>
 			</li>
 			<li>
-				<Link to="/koszyk">
-					<img src={BASKET_ICON} alt="" />
-                    <div className={styles.numOfProducts}>{cartItems}</div>
+				<Link to={`/koszyk`}>
+					<img src={BASKET_ICON} />
+					<div className={styles.numOfProducts}>{cartItems}</div>
 				</Link>
 			</li>
 		</ul>
