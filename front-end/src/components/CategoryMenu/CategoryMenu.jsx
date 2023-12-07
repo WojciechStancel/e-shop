@@ -5,9 +5,9 @@ import { CATEGORIES } from "../../constants/categories";
 const CategoryMenu = () => {
 	const params = useParams();
 
-	if (Object.keys(params).length === 0 && params.constructor === Object) {
-		return <div className={styles.basketMenu}/>;
-	}
+	// if (Object.keys(params).length === 0 && params.constructor === Object) {
+	// 	return <div className={styles.basketMenu}/>;
+	// }
 
 	return (
 		<div className={styles.categoryMenu}>

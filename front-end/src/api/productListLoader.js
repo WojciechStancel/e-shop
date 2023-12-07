@@ -12,6 +12,7 @@ export function productListLoader({
 	const foundCategory = CATEGORIES.find((c) => c.path === category);
 	const foundGender = ENDPOINT_MAPPING[gender];
 
+
 	if (foundGender && foundCategory) {
 		let url = `${BACK_END_URL}/products/?gender=${foundGender}&category=${category}`;
 
@@ -36,6 +37,7 @@ export function productListLoader({
 			});
 		});
 	} else {
-		redirect("/kobieta");
+		return redirect(`/kobieta/${category}`)
+
 	}
 }
