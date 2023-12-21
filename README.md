@@ -3,6 +3,9 @@
 ## This is main project created during the course - [Zrozumieć React ![image](https://github.com/WojciechStancel/React_TODO/assets/121879383/9c59729f-e12c-4877-80c8-1ae2ce358b5a)](https://zrozumiecreact.pl/) 
 It is a Polish course that has been created by fantastic people - Filip and Kacper. The e-commerce project helped me understand a lot of React features and prepared me to build my own bigger applications. All data is stored in back-end folder.
 
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/14950bd7-0848-4e82-b770-14fa1ab0da3a">
+
+
 ## Main Functions
 - Filter by categories (women, men, kids)
   - filter by subcategories (clothes, shoes, accessories, sports)
