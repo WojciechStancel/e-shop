@@ -3,7 +3,21 @@
 ## This is main project created during the course - [Zrozumieć React ![image](https://github.com/WojciechStancel/React_TODO/assets/121879383/9c59729f-e12c-4877-80c8-1ae2ce358b5a)](https://zrozumiecreact.pl/) 
 It is a Polish course that has been created by fantastic people - Filip and Kacper. The e-commerce project helped me understand a lot of React features and prepared me to build my own bigger applications. All data is stored in back-end folder.
 
-<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/14950bd7-0848-4e82-b770-14fa1ab0da3a">
+## Here You have some screenshots
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/428c2949-3f51-4c23-adef-e216c8589a6b" />
+
+## Category Men / Women / Children
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/f7933a19-142e-4666-b29c-23ebb3860332" />
+
+## Filter by category and subcategories
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/437d9966-11a8-439d-a628-e1941be78fae" />
+
+
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/694bd883-975f-40ca-8589-e5d3874218ea" />
+
+## Check product details and add it to the shopping cart! 
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/de31b2e1-3002-4a13-980e-5964c676f895" />
+<img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/308af82f-023f-4c2b-8782-0bc3337785ea" />
 
 
 ## Main Functions
@@ -19,7 +33,7 @@ It is a Polish course that has been created by fantastic people - Filip and Kacp
 ## Planned implementations
 - Remove items from cart
 - Checkout process
-- Responsiveness 
+- ~~Responsiveness~~ Done! 
 
 ## Getting Started
 
