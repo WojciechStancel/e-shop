@@ -6,3 +6,11 @@
     max-width: 75rem;
     margin: 0 auto;
 }
+
+@media (max-width: 1024px) {
+    .flexContainer {
+        padding: 1rem;
+        gap: 1.2rem;
+
+    }
+}

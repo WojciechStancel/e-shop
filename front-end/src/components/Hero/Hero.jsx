@@ -9,7 +9,7 @@ const Hero = ({ heroImage }) => {
 			style={{ backgroundImage: `url(${heroImage})` }}>
 			<CenteredContent>
 				<div className={style.contentWrapper}>
-					<h2>Promocja na Black Friday -40%</h2>
+					<h2>Świąteczna wyprzedaż -40%</h2>
 					<p>Najlepsze okazje!</p>
 					<FullWidthBtn>Sprawdź ofertę!</FullWidthBtn>
 				</div>

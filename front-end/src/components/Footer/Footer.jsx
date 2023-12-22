@@ -1,9 +1,10 @@
 import styles from "./Footer.module.css";
+const currentYear = new Date().getFullYear()
 
 const Footer = () => {
 	return (
 		<div className={styles.footer}>
-			<p></p>&copy; 2023 BestShop
+			<p>&copy; {currentYear} FancyShop</p>
 		</div>
 	);
 };

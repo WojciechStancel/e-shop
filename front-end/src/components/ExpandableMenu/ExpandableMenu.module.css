@@ -31,3 +31,10 @@
 .expanded {
 	transform: rotate(180deg);
 }
+
+@media (max-width: 1024px) {
+	.expandableMenu {
+		width: 8rem;
+		padding-left: 0.5rem;
+	}
+}

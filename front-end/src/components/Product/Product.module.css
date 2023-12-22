@@ -34,3 +34,10 @@
 .heart:hover {
     background-image: url('../../assets/heart-filled.svg');
 }
+
+@media (max-width: 1024px) {
+    .product img {
+        width: 170px;
+        height: 200px;
+    }
+}

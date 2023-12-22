@@ -1,3 +1,10 @@
 .currencySelector {
     padding: 0.6rem;
 }
+
+
+@media (max-width: 1024px) {
+    .currencySelector {
+        padding: 0.1rem;
+    }
+}

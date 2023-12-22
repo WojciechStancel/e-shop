@@ -1,0 +1,15 @@
+.mobileFlexContainer {
+	display: flex;
+	align-items: flex-start;
+	gap: 1rem;
+	width: 100%;
+	max-width: 75rem;
+	margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+	.mobileFlexContainer {
+		display: flex;
+		flex-direction: column;
+	}
+}

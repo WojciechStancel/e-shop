@@ -1,6 +1,7 @@
 .categoryMenu {
 	background-color: var(--color-theme-main);
 	width: 100%;
+	margin-top: 63px;
 }
 
 .categoryMenu ul {

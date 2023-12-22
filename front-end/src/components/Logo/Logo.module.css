@@ -1,9 +1,29 @@
 .logo {
-    text-transform: none;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    font-size: 2rem;
+	text-align: center;
 }
 
-.logo span {
-    color: var(--color-theme-main);
-    text-transform: none;
+.logo img {
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:768px) {
+	.logo {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.logo {
+		font-size: 1.2rem;
+	}
+
+	.logo img {
+		width: 20px;
+		height: 20px;
+	}
 }

@@ -44,12 +44,44 @@
 .btnRow button {
 	border: none;
 	background: none;
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .btnRow button img {
 	margin-right: 0.5rem;
 	width: 1.25rem;
 	height: 1.25rem;
+}
+
+@media (max-width: 578px) {
+	.topRow > p {
+		display: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.favouriteProduct {
+		gap: 1.5rem;
+	}
+
+	.topRow {
+		font-size: 1rem;
+	}
+
+	.btnRow {
+		gap: 1rem;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		margin-top: 1rem;
+	}
+
+	.btnRow button {
+	}
+
+	.btnRow button img {
+		width: 1.25rem;
+		height: 1.25rem;
+	}
 }

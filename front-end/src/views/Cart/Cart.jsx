@@ -1,19 +1,16 @@
 import { useContext } from "react";
 import CartProductList from "../../components/CartProductList/CartProductList";
 import CartSummary from "../../components/CartSummary/CartSummary";
-import FlexContainer from "../../components/FlexContainer/FlexContainer";
+import MobileFlexContainer from "../../components/MobileFlexContainer/MobileFlexContainer";
 import { CartContext } from "../../contexts/CartContext";
 
-
 const Cart = () => {
-	const [cartItems] = useContext(CartContext)
+	const [cartItems] = useContext(CartContext);
 	return (
-
-			<FlexContainer>
-				<CartProductList products={cartItems} />
-				<CartSummary products={cartItems} />
-			</FlexContainer>
-
+		<MobileFlexContainer>
+			<CartProductList products={cartItems} />
+			<CartSummary products={cartItems} />
+		</MobileFlexContainer>
 	);
 };
 export default Cart;

@@ -1,8 +1,14 @@
-import styles from "./TopBar.module.css"
+import styles from "./TopBar.module.css";
 
-const TopBar = ({children}) => {
-  return (
-    <div className={styles.topBar}>{children}</div>
-  )
-}
-export default TopBar
+const TopBar = ({ children }) => {
+	return (
+			<div className={`${styles.topBar}`}>
+				<span className={styles.container}>
+					{children}
+				</span>
+
+			</div>
+
+	);
+};
+export default TopBar;

@@ -4,6 +4,7 @@ import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 import Photos from "../../components/Photos/Photos";
 import Details from "../../components/Details/Details";
 import { useLoaderData } from "react-router-dom";
+import MobileFlexContainer from "../../components/MobileFlexContainer/MobileFlexContainer"
 
 const ProductDetails = () => {
 	const product = useLoaderData()
@@ -14,10 +15,10 @@ const ProductDetails = () => {
 				<ExpandableMenu />
 				<div style={{width: "100%"}}>
 					<Breadcrumbs />
-					<FlexContainer>
+					<MobileFlexContainer>
 						<Photos product={product} />
 						<Details product={product} />
-					</FlexContainer>
+					</MobileFlexContainer>
 				</div>
 			</FlexContainer>
 
