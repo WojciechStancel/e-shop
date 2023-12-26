@@ -1,23 +1,23 @@
 ## E-Shop website build with React + Vite.js - Project helped me understand a lot of React features and prepared me to build bigger applications. All data is stored in back-end folder.
 
-## Here You have some screenshots
+## Here you have some screenshots 📷
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/428c2949-3f51-4c23-adef-e216c8589a6b" />
 
-## Category Men / Women / Children
+## Category Men / Women / Children 👨‍👩‍👧‍👦
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/f7933a19-142e-4666-b29c-23ebb3860332" />
 
-## Filter by category and subcategories
+## Filter by category and subcategories 👖👟👕🧥
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/437d9966-11a8-439d-a628-e1941be78fae" />
 
 
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/694bd883-975f-40ca-8589-e5d3874218ea" />
 
-## Check product details and add it to the shopping cart! 
+## Check product details and add it to the shopping cart! 🛒
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/de31b2e1-3002-4a13-980e-5964c676f895" />
 <img width="100%" alt="e-shop" src="https://github.com/WojciechStancel/e-shop/assets/121879383/308af82f-023f-4c2b-8782-0bc3337785ea" />
 
 
-## Main Functions
+## Main Functions ✅
 - Filter by categories (women, men, kids)
   - filter by subcategories (clothes, shoes, accessories, sports)
 - Currency selector (PLN, USD)
@@ -27,12 +27,12 @@
   - items are also stored in Local Storage
 - fetching data from backend (JSON server)
 
-## Planned implementations
+## Planned implementations 🔍
 - Remove items from cart
 - Checkout process
 - ~~Responsiveness~~ Done! 
 
-## Getting Started
+## Getting Started 
 
 To start working with this project, follow these simple steps:
 
